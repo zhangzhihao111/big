@@ -1,0 +1,239 @@
+@import url(reset.css);
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@dir:horizontal) {
+    display: -webkit-box;
+    -webkit-box-orient: @dir;
+}
+.container,
+body,
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container {
+    .box(vertical);
+    .zhao{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        .sure{
+            .full(4.5rem,2.4rem,#fff);
+            border-radius: 0.15rem;
+            position: absolute;
+            left: 50%;
+            margin-left: -2.25rem;
+            top: 50%;
+            margin-top: -1.5rem;
+            p{ 
+                text-align: center;
+                line-height: 60px;
+                font-size: .4rem;
+            }
+            .p1{
+                display:inline-block;
+                 font-size: 15px;
+                // line-height: 40px;
+                 text-indent: 0.3em;
+                 text-align: center;
+                 margin-top: 15px;
+                 
+            }
+            .p2{
+               display: block;
+                 font-size:10px;
+                // line-height: 40px;
+                 
+                 text-align: center;
+                 margin-top: 8px;
+                 margin-bottom: 3px;
+                 color: #efefef;
+            }
+            .sp{
+            
+                border-top: 1px solid #ffd6a1;
+                 border-right: 1px solid #929292;
+              text-align: center;
+                display: inline-block;
+                width: 49%;
+                height: 42px;
+                line-height: 42px;
+                font-size: 15px;
+              
+            }
+            
+           
+            
+        }
+    }
+        .zhao1{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        .sure1{
+            .full(4.5rem,2.4rem,#fff);
+            border-radius: 0.15rem;
+            position: absolute;
+            left: 50%;
+            margin-left: -2.25rem;
+            top: 50%;
+            margin-top: -1.5rem;
+            p{ 
+              margin-top: 6px;
+               margin-left: 20px;
+                font-size: 15px;
+                border-bottom: 1px solid #eeeeee;
+                height: 28px;
+            }
+            
+           
+            
+        }
+    }
+    header{
+        .full(auto,0.89rem,#f94c5c);
+        .box;
+        
+        -webkit-box-align: center;
+        .img{
+           position: absolute;
+           top: 0.25rem;
+           left: 0.4rem;
+            img{
+                width: 0.36rem;
+                height: auto;
+            }
+        }
+        .head{
+            -webkit-box-flex: 1;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+    }
+    section{
+         -webkit-box-flex: 1;
+         background: #f3f3f3;
+         position: relative;
+         .one1{
+             .full(100%,0.94rem,none);
+             margin-top: 13px;
+             background: #FFFFFF url(../img/images/3-3-1设置·_07.png) no-repeat right 20px center;
+             background-size:auto 0.3rem;
+             border-bottom: 1px solid #f3f3f3;
+             a{
+                 font-size: 17px;
+                 margin-left: 20px;
+                 line-height: 37px;
+             }
+             
+         }
+         .one2{
+             .full(100%,0.94rem,none);
+             
+             background: #FFFFFF url(../img/60.png) no-repeat right 7px;
+             background-size:auto 1rem;
+             border-bottom: 1px solid #f3f3f3;
+             a{
+                 font-size: 17px;
+                 margin-left: 20px;
+                 line-height: 37px;
+             }
+             
+         }
+         .one{
+             .full(100%,0.94rem,none);
+             background: #FFFFFF url(../img/images/3-3-1设置·_07.png) no-repeat right 20px center;
+             background-size:auto 0.3rem;
+             border-bottom: 1px solid #f3f3f3;
+             a{
+                 font-size: 17px;
+                 margin-left: 20px;
+                 line-height: 37px;
+             }
+             
+         }
+         .two{
+             .full(100%,0.94rem,#fff);
+            
+             background-size:auto 0.3rem;
+            position: relative;
+             a{
+                 font-size: 17px;
+                 margin-left: 20px;
+                 line-height: 37px;
+             }
+             span{
+                position: absolute;
+                       top: 30%;
+                       right:20px;
+                       font-size: 16px;
+             }
+             
+         }
+         .two2{
+             .full(100%,0.94rem,none);
+             background: #FFFFFF url(../img/images/3-3-1设置·_07.png) no-repeat right 20px center;
+             background-size:auto 0.3rem;
+             border-bottom: 1px solid #f3f3f3;
+             a{
+                 font-size: 17px;
+                 margin-left: 20px;
+                 line-height: 37px;
+             }
+             
+         }
+         .dd{
+              .full(6.7rem,0.88rem,#f9384b);
+             text-align: center;
+              position: absolute;
+              top: 50%;
+              margin-left: -0.35rem;
+              margin-left: 0.35rem;
+               border-radius:10px ;
+               a{
+                   color: #fff;
+                   font-size:20px ;
+                  line-height: 0.8rem;
+                   
+               }
+         }
+         .name{
+             .full(100%,0.94rem,#fff);
+             position: relative;
+             border-bottom: 1px solid #f3f3f3;
+             a{
+                 font-size: 17px;
+                 margin-left: 20px;
+                 line-height: 37px;
+             }
+             span{
+                 font-size: 15px;
+                
+                 line-height: 37px;
+                position: absolute;
+                top: 0;
+                right: 15px;
+                color: #a1a1a1;
+             }
+             
+         }
+    }
+    
+}

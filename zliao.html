@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript">
+   		  (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                  var clientWidth = docEl.clientWidth;
+                  if (!clientWidth) return;
+                  docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+ 
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+    <!--<script type="text/javascript" src="js/list.js" ></script>-->
+</head>
+<body>
+	<div class="container">
+		
+		<header>
+			<div class="img"><a href="my2.html"><img src="img/images/3-3-1设置·_03.png"/></a></div>
+			<div class="head">我的资料</div>
+		</header>
+		<section>
+			<div class="one2">
+				<a href="change.html">头像</a>
+				
+			</div>
+			<div class="name">
+				<a href="">昵称</a>
+				<span>宝宝</span>
+			</div>
+			<div class="name">
+				<a href="">性别</a>
+				<span>男</span>
+			</div>
+			<div class="name">
+				<a href="">生日</a>
+				<span>8.8</span>
+			</div>
+			<div class="name">
+				<a href="">地区</a>
+				<span>中国</span>
+			</div>
+			<div class="name">
+				<a href="">个性签名</a>
+				<span>呵呵呵</span>
+			</div>
+			<div class="two2">
+				<a href="">更改手机号</a>
+			</div>
+			
+		</section>
+		
+	</div>
+</body>
+</html>
